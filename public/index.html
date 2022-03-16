@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../src/styles/style.css">
+</head>
+<body>
+    <script defer src="../dist/renderData.js"></script>
+    <script defer src="../dist/localStorage.js"></script>
+    <script defer src="../dist/main.js"></script>
+   
+    <main class="main">
+        <h1 class="main-title">Calories Counter</h1>
+        <section class="main-content">
+            <article class="table header">
+                    <p>Name</p>
+                    <p>Cant</p>
+                    <p>unit calories</p>
+                    <p>Total calories</p>
+                    <span></span>
+            </article>
+            <article class="table items">
+                    <div class="table-item--row" >
+                        <p>apple-example</p>
+                        <p>0</p>
+                        <p>0</p>
+                        <p>0</p>
+                        <span>
+                            <input class="button-delete" value="example" type="button">
+                        </span>
+                        
+                    </div>
+                   
+            </article> 
+            <section class="table-results">
+                <h1 class="totalUnits">Total units: <span>0</span></h1>
+                <h1 class="totalCalories">Total calories: <span>0</span></h1>
+                
+            </section>
+           
+            <form class="table-form" id="table-form">
+                <h1 class="table-form--title">Add new one:</h1>
+                <div class="input-container">
+                    <input data="name" type="text" placeholder="Apple" required>
+                    <input data="cant" type="number" placeholder="2" required>
+                    <input data="calories" type="number" placeholder="200" required>
+                    
+                    <input class="button-add" value="add" type="submit">
+                </div>
+              
+            </form>
+         
+
+        </section>
+    </main>
+</body>
+</html>

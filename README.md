@@ -1,1 +1,1 @@
-# counter-calories
+# TypeScript Counter App
